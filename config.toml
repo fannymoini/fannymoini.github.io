@@ -1,0 +1,4 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Data Science Portfolio"
+theme = 'personal-web'
