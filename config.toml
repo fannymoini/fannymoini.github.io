@@ -1,4 +1,77 @@
-baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "Data Science Portfolio"
+title = "Fanny Moïni"
 theme = 'personal-web'
+copyright="© Fanny Moïni"
+enableEmoji=true
+
+[params.intro]
+  main = "Fanny Moïni"
+  sub = "Data Scientist & PO"
+
+[taxonomies]
+  skills = "competence"
+  techno = "stack technique"
+
+[params]
+  breadcrumb = true
+  accentColor = "#FD3519"
+  mainSections = ['post'] # values: ['post', 'portfolio'] only accept one section, to be displayed bellow 404
+
+[params.main]
+  latestPublishHeader = "Dernier article"
+
+[params.notFound]
+  gopher = "/images/404_not_found.jpg" # checkout https://www.zanorg.net/bouletmaton/
+  h1 = 'Aïe!'
+  p = "Cette page n'existe pas..."
+
+[params.sections]
+  post = "article"
+  portfolio = "project"
+
+[params.sidebar]
+  backgroundImage = '/images/splash_sidebar.jpg' # header background image - default "/images/default_sidebar.jpg" - Photo by Tim Marshall on Unsplash
+  gradientOverlay = 'rgba(0,0,0,0.4),rgba(0,0,0,0.4)' # default: rgba(0,0,0,0.4),rgba(0,0,0,0.4)
+  logo = "/images/logo.png" # - default "/images/edna-west.jpg"
+
+[params.social]
+  github = "https://github.com/quospades/"
+  linkedin = "https://www.linkedin.com/in/fanny-moïni/"
+  instagram = "https://www.instagram.com/quospades"
+  gitlab = "https://gitlab.com/quospades"
+
+[params.contact]
+  email = "moini.fanny@gmail.com"
+  text= "Me contacter" # text of the contact link in the sidebar. If email params.contact.email is defined
+
+[menu]
+
+[[menu.main]]
+  identifier = "about"
+  name = "À propos"
+  title = "À propos"
+  url = "/about/"
+  weight = -120
+
+[[menu.main]]
+  identifier = "portfolio"
+  name = "Portfolio"
+  title = "Portfolio"
+  url = "/portfolio/"
+  weight = -110
+
+[[menu.main]]
+  identifier = "blog"
+  name = "Blog"
+  title = "Blog section"
+  url = "/post/"
+  weight = -100
+
+[privacy]
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    disable = true
+    respectDoNotTrack = true
+    useSessionStorage = false
+
+
