@@ -1,4 +1,3 @@
-baseURL = 'https://quospades.github.io/portfolio_website/'
 languageCode = "en-us"
 title = "Fanny Moïni"
 theme = 'personal-web'
