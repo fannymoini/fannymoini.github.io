@@ -15,7 +15,7 @@ enableEmoji=true
 [params]
   breadcrumb = true
   accentColor = "#FD3519"
-  mainSections = ['post'] # values: ['post', 'portfolio'] only accept one section, to be displayed bellow 404
+  mainSections = ['blog'] # values: ['post', 'portfolio'] only accept one section, to be displayed bellow 404
 
 [params.main]
   latestPublishHeader = "Dernier article"
@@ -26,7 +26,7 @@ enableEmoji=true
   p = "Cette page n'existe pas..."
 
 [params.sections]
-  post = "article"
+  blog = "article"
   portfolio = "project"
 
 [params.sidebar]
@@ -38,7 +38,6 @@ enableEmoji=true
   github = "https://github.com/quospades/"
   linkedin = "https://www.linkedin.com/in/fanny-moïni/"
   instagram = "https://www.instagram.com/quospades"
-  gitlab = "https://gitlab.com/quospades"
 
 [params.contact]
   email = "moini.fanny@gmail.com"
@@ -57,14 +56,14 @@ enableEmoji=true
   identifier = "portfolio"
   name = "Portfolio"
   title = "Portfolio"
-  url = "/portfolio/"  # changer pour "projects" ?
+  url = "/portfolio/"  # changer pour "projects" pour éviter répétition dans l'URL?
   weight = -110
 
 [[menu.main]]
   identifier = "blog"
   name = "Blog"
-  title = "Blog section"
-  url = "/post/"
+  title = "Blog"
+  url = "/blog/"
   weight = -100
 
 [privacy]

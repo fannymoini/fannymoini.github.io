@@ -9,15 +9,15 @@
   {{ if in .Site.Params.mainSections "portfolio" }}
     {{ $scratch.Set "section" .Site.Params.sections.portfolio }}
   {{ else }}
-    {{ $scratch.Set "section" (.Site.Params.sections.post) }}
+    {{ $scratch.Set "section" (.Site.Params.sections.blog) }}
   {{ end }}
 
-  <p>While you're here, you can check out my last {{ $scratch.Get "section" }}:</p>
+  <p>Puisque vous êtes là, jetez un oeil à mon dernier {{ $scratch.Get "section" }} :</p>
   {{ $pages := where site.RegularPages "Type" "in" .Site.Params.mainSections }}
   {{ range first 1 $pages }}
     {{ if in .Site.Params.mainSections "portfolio" }}
       {{ partial "portfolio/item" .}}
-    {{ else if in .Site.Params.mainSections "post" }}
+    {{ else if in .Site.Params.mainSections "blog" }}
       {{ partial "post/item" .}}
     {{ end }}
   {{ end }}
