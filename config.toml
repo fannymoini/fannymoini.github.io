@@ -57,7 +57,7 @@ enableEmoji=true
   identifier = "portfolio"
   name = "Portfolio"
   title = "Portfolio"
-  url = "/portfolio/"
+  url = "/portfolio/"  # changer pour "projects" ?
   weight = -110
 
 [[menu.main]]
