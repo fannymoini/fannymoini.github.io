@@ -35,9 +35,9 @@ enableEmoji=true
   logo = "images/logo_small.jpg" # - default "/images/edna-west.jpg"
 
 [params.social]
-  github = "https://github.com/quospades/"
+  github = "https://github.com/fannymoini/"
   linkedin = "https://www.linkedin.com/in/fanny-moïni/"
-  instagram = "https://www.instagram.com/quospades"
+  z_instagram = "https://www.instagram.com/quospades"
 
 [params.contact]
   email = "moini.fanny@gmail.com"
