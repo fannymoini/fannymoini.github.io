@@ -3,7 +3,6 @@ title: "Créer un site avec Hugo et Github pages"
 description: Partage d'expérience sur la création de ce site
 date: 2024-01-02T18:58:12+01:00
 ---
-
 <!--Skills:
 - Hugo, Git, Github, Github pages, Github Actions, CI/CD, YAML, Markdown, Powershell
 -->
@@ -23,6 +22,7 @@ J'ai choisi d'utiliser un générateur de sites statiques, **Hugo**, et d'héber
 	Dans un second temps, il est possible d'acheter un nom de domaine séparément puis de configurer Github Pages pour l'utiliser.
 	
 ## Prérequis
+##
 - savoir utiliser un **terminal**
 - savoir écrire des fichiers **markdown**
 - savoir utiliser **Git**
@@ -30,14 +30,16 @@ J'ai choisi d'utiliser un générateur de sites statiques, **Hugo**, et d'héber
 - avoir des connaissances basiques en **CI/CD** (principalement savoir consulter et interpréter les logs de Github Actions)
 
 ## Ressources
+##
 - installation de Hugo et prise en main : [Quick start](https://gohugo.io/getting-started/quick-start/)
-- [Explication de la structure d'un site Hugo](https://jamstatic.fr/2017/06/07/migration-de-jekyll-a-hugo/)
-- le thème que j'ai utilisé : [personal-web](https://github.com/bjacquemet/personal-web). Il est possible de customiser le thème via le système des layouts.
+- structure d'un site Hugo : [Explication (très) détaillée](https://jamstatic.fr/2017/06/07/migration-de-jekyll-a-hugo/)
+- le thème que j'ai utilisé parmi les [thèmes disponibles](https://themes.gohugo.io) : [personal-web](https://github.com/bjacquemet/personal-web). Il est possible de customiser le thème via le système des layouts.
 - déploiement : [Hugo + Github Pages](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
 
 Note : a priori il est possible d'intégrer des **Notebooks Jupyter**, comme suggéré [ici](https://romankurnovskii.com/en/posts/howto-render-notebook-in-hugo/) et [là](https://github.com/vlunot/nb2hugo-demo/blob/master/notebooks/blogging-with-jupyter-notebooks-and-hugo/blogging-with-jupyter-notebooks-and-hugo.ipynb)
 
 ## Troubleshooting
+##
 - Si vous rencontrez un problème avec le thème, pensez à vérifier que vous utilisez une version récente de Hugo.
 - Dans le fichier de configuration principal, formattez les URL relative **sans** les préfixer par un `/` (`images/mon_image.jpg` plutôt que `/images/mon_image.jpg`). Sinon, le build en local ne montrera aucun problème, mais au déploiement Github Pages ne saura plus interpréter l'URL générée et ne trouvera plus les images.
 
